@@ -1,0 +1,57 @@
+page {
+  height: 100%;
+}
+.setting_wrap {
+  height: 100%;
+  border-top: 1rpx solid #eee;
+  background-color: #eee;
+}
+.item {
+  background-color: #fff;
+  margin-bottom: 18rpx;
+}
+.avtar_wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding: 67rpx 0 67rpx 58rpx;
+}
+.avatar_wrap {
+  width: 145rpx;
+  height: 145rpx;
+}
+.name_phone {
+  padding-left: 35rpx;
+  padding: 30rpx;
+}
+.avtar_wrap text {
+  display: block;
+}
+.name {
+  font-size: 38rpx;
+  line-height: 38rpx;
+  color: #333;
+}
+.telephone {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #999;
+  margin-top: 24rpx;
+}
+.rest_password {
+  padding: 46rpx 0 46rpx 22rpx;
+}
+.rest_password text {
+  padding-left: 18rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #333;
+}
+.rest_password .password_img {
+  width: 23rpx;
+  height: 28rpx;
+}
+.rest_password .exit_img {
+  margin: 1rpx 0 0 2rpx;
+  width: 24rpx;
+  height: 25rpx;
+}
