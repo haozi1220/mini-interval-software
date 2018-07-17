@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/waitTask/waitTask",
     "pages/alreadyTask/alreadyTask",
     "pages/myTask/myTask",
     "pages/settings/settings",
-    "pages/index/index",
     "pages/authorMess/authorMess",
     "pages/logs/logs"
   ],
@@ -13,5 +13,30 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#309afc",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务共享池",
+        "iconPath": "images/share_gray.png",
+        "selectedIconPath": "images/share_blue.png"
+      },
+      {
+        "pagePath": "pages/myTask/myTask",
+        "text": "我的任务",
+        "iconPath": "images/mine_gray.png",
+        "selectedIconPath": "images/mine_blue.png"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "设置",
+        "iconPath": "images/settings_gray.png",
+        "selectedIconPath": "images/settings_blue.png"
+      }
+    ]
   }
 }

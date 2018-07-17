@@ -5,9 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: '2018-3-3'
+    date: '2018-3-3',
+    tabActive: 'tab1'
   },
-
+  TabChange({detail}){
+    this.setData({
+      tabActive: detail.key
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

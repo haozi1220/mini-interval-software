@@ -10,10 +10,14 @@ Page({
     date: '2018-3-3'
   },
   TabChange({detail}){
-    console.log(detail);
     this.setData({
-      tabActive: detail.key
+      tabActive: detail.key,
     })
+    if(detail.key == "tab1"){
+      url: 'pages/waitTask/waitTask'
+    }else if(detail.key == "tab2") {
+      url: 'pages/alreadyTask/alreadyTask'
+    }
   },
   /**
    * 生命周期函数--监听页面加载

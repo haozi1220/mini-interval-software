@@ -1,8 +1,8 @@
 <view class="wrap">
-  <i-tabs current="{{ tabActive }}" color="#fff" bindchange="TabChange" class="tabBox">
+  <i-tabs current="{{ tabActive }}"  bindchange="TabChange" class="tabBox">
     <i-tab key="tab1" title="待排查" class="tab_item"></i-tab>
     <view class='empty_line'></view>
-    <i-tab key="tab2" title="已排查" class="tab_item tabActive"></i-tab>
+    <i-tab key="tab2" title="已排查" class="tab_item"></i-tab>
   </i-tabs>
   <view class='picker_wrap'>
     <picker mode="date" value="{{date}}"bindchange="bindDateChange" class="picker_item">
@@ -17,9 +17,4 @@
     <image src='../../images/empty_img.png'></image>
     <text>这里什么都没有</text>
   </view>
-  <i-tab-bar current="{{ current }}" bindchange="handleChange" fixed color="#eee">
-    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="任务共享池"></i-tab-bar-item>
-    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="我的任务"></i-tab-bar-item>
-    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="设置"></i-tab-bar-item>
-</i-tab-bar>
 </view>

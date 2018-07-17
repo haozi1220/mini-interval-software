@@ -139,7 +139,7 @@ page {
 .constractor {
   width: 610rpx;
   margin-left: 54rpx;
-  padding:18rpx 0 42rpx 0;
+  padding:18rpx 33rpx 42rpx 0;
   box-sizing: border-box;
   border-top: 1rpx solid #ddd;
 }
@@ -161,7 +161,7 @@ page {
   line-height: 46rpx !important;
   color: #309afc !important;
   text-align: center !important;
-  border-color: #309afc !important;
+  border:1rpx solid #309afc !important;
   padding: 0 !important;
   background-color: #fff !important ;
   margin: 0 !important;
@@ -193,4 +193,46 @@ page {
   margin: 10rpx 0;
   height: 2rpx;
   background-color: #bbb;
+}
+/*回退部分  */
+.check_back_wrap .empty_line {
+  width: 610rpx;
+  margin-left: 54rpx;
+  border-top: 1rpx solid #ddd;
+}
+.check_back_wrap .check_back_top {
+  display: flex;
+  justify-content: flex-start;
+  padding: 28rpx 0;
+}
+.check_back_wrap .check_back_top image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+}
+.check_back_wrap .check_back_top .check_text {
+  display: flex;
+  width: 610rpx;
+  height: 30rpx;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding-left: 22rpx;
+}
+.check_back_wrap .check_back_top .check_back {
+  font-size: 28rpx;
+  line-height: 30rpx;
+  color: #fc3030;
+}
+.check_back_wrap .check_back_top .gray_text {
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+.check_contr {
+  display: block;
+  padding: 0 0 54rpx 50rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #333;
 }

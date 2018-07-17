@@ -1,8 +1,8 @@
 <view class="wrap">
-  <i-tabs current="{{ tabActive }}" color="#fff" bindchange="TabChange" class="tabBox">
+  <i-tabs current="{{ tabActive }}" bindchange="TabChange" class="tabBox">
     <i-tab key="tab1" title="待排查" class="tab_item"></i-tab>
     <view class='empty_line'></view>
-    <i-tab key="tab2" title="已排查" class="tab_item tabActive"></i-tab>
+    <i-tab key="tab2" title="已排查" class="tab_item"></i-tab>
   </i-tabs>
   <view class='picker_wrap'>
     <picker mode="date" value="{{date}}"bindchange="bindDateChange" class="picker_item">

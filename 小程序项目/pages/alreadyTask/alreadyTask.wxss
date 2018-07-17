@@ -157,10 +157,10 @@ page {
   width: 130rpx !important;
   height: 46rpx !important;
   font-size: 24rpx !important;
-  line-height: 46rpx !important;
+  line-height: 44rpx !important;
   color: #309afc !important;
   text-align: center !important;
-  border-color: #309afc !important;
+  border:1rpx solid #309afc !important;
   padding: 0 !important;
   background-color: #fff !important ;
   margin: 0 !important;
