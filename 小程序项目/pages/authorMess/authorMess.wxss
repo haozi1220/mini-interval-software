@@ -38,6 +38,7 @@ image {
   vertical-align: middle;
 }
 .bottom_text .gray_dated {
+  margin-left: 4rpx;
   width: 8rpx;
   height: 8rpx;
   border-radius: 50%;
@@ -45,9 +46,6 @@ image {
 }
 .bottom_text .gray_text {
   padding-left: 9rpx;
-}
-.idCard_wrap .bottom_text {
-  padding-top: 50rpx;
 }
 .author_wrap image {
   width: 298rpx;
@@ -58,5 +56,8 @@ image {
 }
 .back_btn_wrap .backBtn {
   width: 441rpx;
+  height: 80rpx;
+  font-size: 36rpx;
+  line-height: 80rpx;
   margin: 0 auto;
 }

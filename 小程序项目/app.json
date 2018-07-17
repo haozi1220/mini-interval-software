@@ -1,5 +1,10 @@
 {
   "pages":[
+    "pages/waitTask/waitTask",
+    "pages/alreadyTask/alreadyTask",
+    "pages/myTask/myTask",
+    "pages/settings/settings",
+    "pages/index/index",
     "pages/authorMess/authorMess",
     "pages/logs/logs"
   ],

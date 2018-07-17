@@ -1,0 +1,71 @@
+/* pages/myTask/myTask.wxss */
+page {
+  height: 100%;
+  background-color: #eee;
+}
+/*头部标签页  */
+.tabBox {
+  height: 98rpx;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+.tabBox .tab_item {
+  width: 108rpx;
+  height: 98rpx;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 98rpx;
+  color: #999;
+}
+.tabBox .empty_line {
+  width: 1px;
+  height: 58rpx;
+  margin-top: 20rpx;
+  background-color: #eee;
+}
+.tabBox .tabActive {
+  color: #309afc;
+  border-bottom: 6rpx solid #309afc;
+}
+/*日期选择器  */
+.picker_wrap {
+  display: flex;
+  margin-top: 35rpx;
+  justify-content: center;
+}
+.picker_wrap picker {
+  width: 133rpx;
+  height: 24rpx;
+  padding-bottom: 7rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #309afc;
+  border-bottom: 1px solid #309afc;
+}
+.picker_wrap .picker {
+  text-align: center;
+}
+.picker_wrap text {
+  padding: 0 20rpx 7rpx 20rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #999;
+}
+.empty_warn {
+  margin-top: 136rpx;
+}
+.empty_warn image {
+  display: block;
+  width: 322rpx;
+  height: 179rpx;
+  margin: 0 auto;
+}
+.empty_warn text {
+  display: block;
+  margin-top: 72rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #999;
+}
