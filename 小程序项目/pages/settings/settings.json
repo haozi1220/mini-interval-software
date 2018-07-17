@@ -1,7 +1,3 @@
 {
-  "navigationBarTitleText":"设置",
-  "usingComponents": {
-    "i-icon": "../../dist/icon/index",
-    "i-avatar": "../../dist/avatar/index"
-  }
+  "navigationBarTitleText":"设置"
 }

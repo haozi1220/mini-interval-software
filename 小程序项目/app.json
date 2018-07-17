@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/settings/settings",
+    "pages/authorMess/authorMess",
     "pages/logs/logs"
   ],
   "window":{

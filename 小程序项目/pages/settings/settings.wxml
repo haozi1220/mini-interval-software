@@ -1,8 +1,7 @@
 <view class='setting_wrap'>
   <view class='avtar_wrap item'>
     <view class='avatar_wrap'>
-       <!-- <i-avatar src='../../pages/settings/images/avatar.png' shape='circle' i-class='avatar_img' size="default"></i-avatar>  -->
-       <image src='images/avatar.png' style='width: 145rpx; height:145rpx;'></image> 
+       <image src='../../images/avatar.png' style='width: 145rpx; height:145rpx;' mode='aspectFit'></image> 
     </view>
     <view class='name_phone'>
       <text class='name'>王刚</text>
@@ -11,13 +10,13 @@
   </view>
   <view class='rest_password item'>
     <navigator url='' hover-class='none'>
-      <image src='images/password.png' class='password_img'></image>
+      <image src='../../images/password.png' class='password_img'></image>
       <text>修改密码</text>
     </navigator>
   </view>
   <view class='rest_password item' hover-class='none'>
     <navigator url=''>
-      <image src='images/exit_login.png' class='exit_img'></image>
+      <image src='../../images/exit_login.png' class='exit_img'></image>
       <text>退出登录</text>
     </navigator>
   </view>

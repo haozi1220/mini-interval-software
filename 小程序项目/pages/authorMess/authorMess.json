@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"授权信息",
+  "usingComponents": {
+    "i-button": "../../dist/button/index"
+  }
+}
