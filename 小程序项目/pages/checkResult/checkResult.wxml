@@ -1,0 +1,31 @@
+<!--pages/checkResult/checkResult.wxml-->
+<view class='container'>
+  <view class='c_r_state'>
+    <view class='c_r_state_f'>
+      <text>是否有住院信息</text>
+      <text>有记录</text>
+    </view>
+    <view class='c_r_state_t'>
+      <text>是否有门诊信息</text>
+      <text>有记录</text>
+    </view>
+    <view class='c_r_state_s'>
+      <text class='state_title'>补充说明</text>
+      <view class='state_contant'>病人因车祸在我院住院17天</view>
+    </view>
+    <!-- 影像件 -->
+    <view class='img_detail'>
+      <text>影像件</text>
+      <view class='img_all_icon'>
+        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_04.png'></image>
+        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_01.png'></image>
+        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_02.png'></image>
+        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_03.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 返回按钮 -->
+  <view class='return_btn'>
+    <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">返回</i-button>
+  </view>
+</view>

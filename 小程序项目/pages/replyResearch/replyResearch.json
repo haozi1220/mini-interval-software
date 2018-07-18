@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "回复调查",
+  "usingComponents": {
+    "i-button": "../../dist/button/index"
+  }
+}

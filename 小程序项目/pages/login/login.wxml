@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="userID">
+    <image src="../../images/ID_icon.png"></image>
+    <input class="userNumber" type="number" maxlength="11" placeholder="请输入手机号" placeholder-style="color: #999; font-size: 22rpx;"></input>
+  </view>
+  <view class='userPassword'>
+    <image src='../../images/password_icon.png'></image>
+    <input class='pNum' type='text' placeholder='请输入密码' placeholder-style='color: #999; font-size: 22rpx;'></input>
+  </view>
+  <view class='loginBtn'>
+    <i-button bind:click="handleText" i-class='login' type="primary" long="true" shape="circle">登录</i-button>
+  </view>
+  <i-toast id="toast" />
+</view>

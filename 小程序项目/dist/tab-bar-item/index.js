@@ -16,14 +16,6 @@ Component({
             type: String,
             value: ''
         },
-        img: {
-            type: String,
-            value: ''
-        },
-        currentImg: {
-            type: String,
-            value: ''
-        },
         key: {
             type: String,
             value: ''

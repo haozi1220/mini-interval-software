@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "排查结果",
+  "usingComponents": {
+    "i-button": "../../dist/button/index"
+  }
+}

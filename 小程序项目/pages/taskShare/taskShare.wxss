@@ -1,0 +1,122 @@
+/* pages/taskShare/taskShare.wxss */
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #eee;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 22rpx;
+}
+/*  */
+.one_t_s  {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 16rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  padding: 34rpx 21rpx 34rpx 0;
+}
+.t_s_first  {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.elect_man  {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: 36rpx;
+  color: #333;
+}
+.elect_man checkbox  {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box;
+  margin: 0 20rpx;
+}
+.t_s_time  {
+  font-size: 22rpx;
+  color: #999;
+}
+/* sec */
+.t_s_sec  {
+  font-size: 22rpx;
+  color: #999;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 25rpx;
+}
+.t_s_sec_icon  {
+  width: 30rpx;
+  height: 22rpx;
+  box-sizing: border-box;
+  margin: 0 23rpx;
+}
+.t_s_thir  {
+  font-size: 22rpx;
+  color: #999;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 23rpx;
+}
+.t_s_thir_icon  {
+  width: 26rpx;
+  height: 26rpx;
+  box-sizing: border-box;
+  margin: 0 25rpx;
+}
+.bor_bott  {
+  width: 612rpx;
+  border-top: 1rpx solid #ddd;
+  box-sizing: border-box;
+  margin: 27rpx 0 0 76rpx;
+  padding-top: 22rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+/* 申请按钮 */
+.return_btn  {
+  width: 442rpx;
+  box-sizing: border-box;
+  margin-top: 80rpx;
+}
+.login {
+  height: 80rpx!important;
+  line-height: 80rpx!important;
+  font-size: 36rpx!important;
+}
+
+/*  重写 checkbox 样式  */
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 30rpx; /* 背景的宽 */
+   height: 30rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: #fcc030;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 30rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 30rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 30rpx;
+   text-align: center;
+   font-size:24rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}

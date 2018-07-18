@@ -1,7 +1,15 @@
 /* pages/alreadyTask/alreadyTask.wxss */
 page {
-  padding-bottom: 98rpx;
   background-color: #eee;
+}
+/*顶部固定定位  */
+.top_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  z-index: 99;
 }
 /*头部标签页  */
 .tabBox {
@@ -71,6 +79,7 @@ page {
 }
 /*列表块  */
 .scroll_wrap {
+  padding-top: 162rpx;
   width: 706rpx;
   margin: 35rpx auto 0;
 }
@@ -192,4 +201,40 @@ page {
   margin: 10rpx 0;
   height: 2rpx;
   background-color: #bbb;
+}
+/*加载更多  */
+.loading_wrap {
+  padding: 30rpx 0 25rpx;
+}
+.loading_wrap .refresh_wrap{
+  display: flex;
+  width: 118rpx;
+  height: 20rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.loading_wrap .refresh_wrap image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18rpx;
+  height: 20rpx;
+}
+.loading_wrap .refresh_wrap text {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  color: #999;
+}
+/*正在加载  */
+.loading_wrap .loading {
+  display: flex;
+  justify-content: space-between;
+  width: 70rpx;
+  align-items: center;
+  margin: 0 auto;
+}
+.loading_wrap .loading .dated {
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #bbb;
+  border-radius: 50%;
 }

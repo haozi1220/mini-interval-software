@@ -1,0 +1,75 @@
+/* pages/login/login.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+/* 账号 */
+.userID  {
+  border-bottom: 1rpx solid #666;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 548rpx;
+  height: 47rpx;
+  box-sizing: border-box;
+  margin-top: 203rpx;
+}
+.userID image {
+  width: 28rpx;
+  height: 40rpx;
+  box-sizing: border-box;
+  padding-bottom: 3rpx;
+}
+.userID .userNumber  {
+  height: 46rpx;
+  line-height: 46rpx;
+  box-sizing: border-box;
+  margin-left: 29rpx;
+  font-size: 22rpx;
+}
+/* 密码 */
+.userPassword  {
+  border-bottom: 1rpx solid #666;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 548rpx;
+  height: 49rpx;
+  box-sizing: border-box;
+  margin-top: 49rpx;
+}
+.userPassword image {
+  width: 30rpx;
+  height: 44rpx;
+  box-sizing: border-box;
+  padding-bottom: 4rpx;
+}
+.userPassword .pNum  {
+  height: 46rpx;
+  line-height: 46rpx;
+  box-sizing: border-box;
+  margin-left: 29rpx;
+  padding-top: 1rpx;
+  font-size: 22rpx;
+}
+/* 登录按钮 */
+/* .loginBtn  {
+  width: 588rpx;
+} */
+.loginBtn  {
+  width: 548rpx;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+}
+.login {
+  height: 80rpx!important;
+  line-height: 80rpx!important;
+  font-size: 36rpx!important;
+  /* background: red!important; */
+}
+.login .i-btn  {}

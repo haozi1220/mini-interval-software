@@ -1,0 +1,128 @@
+/* pages/replyResearch/replyResearch.wxss */
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #eee;
+  width: 100%;
+  min-height: 100vh;
+  padding: 31rpx 22rpx 0;
+}
+.r_header  {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding:35rpx 29rpx 0;
+}
+/* 住院信息 */
+.i_hospital  {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+  box-sizing: border-box;
+  margin-bottom: 60rpx;
+}
+.radio  {
+  color: #999;
+}
+.radio-group .radio:nth-child(1)  {
+  box-sizing: border-box;
+  margin-right: 70rpx;
+}
+/* 单选按钮样式 */
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 26rpx;
+   height: 25rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked::before  {
+  border-radius: 50%;/* 圆角 */
+  width: 26rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 25rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 26rpx;
+  text-align: center;
+  font-size:19rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */   background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+/* 补充说明 */
+
+.s_state_title  {
+  font-size: 28rpx;
+  color: #333;
+}
+/* 上传图片 */
+.up_state  {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 70rpx;
+}
+.up_state text  {
+  font-size: 22rpx;
+  color: #999;
+  box-sizing: border-box;
+  margin-left: 10rpx;
+}
+.up_img_contant  {
+  display: flex;
+  flex-flow: row;
+  font-size: 28rpx;
+  color: #333;
+  box-sizing: border-box;
+  padding-bottom: 60rpx;
+}
+.i_icon_l  {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 40rpx 0 30rpx;
+}
+.i_icon_l .del_icon  {
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+}
+.i_icon_r  {
+  position: relative;
+}
+.i_icon_r .del_icon  {
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+}
+/* 底部按钮 */
+.r_footer  {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 52rpx;
+  position: fixed;
+  bottom: 178rpx;
+  left: 0;
+}
+.loginBtn  {
+  width: 272rpx;
+  box-sizing: border-box;
+}
+.cancle {
+  width: 272rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #309afc;
+  border-radius: 40rpx;
+  margin-right: 102rpx;
+}
+.login {
+  height: 70rpx!important;
+  line-height: 70rpx!important;
+  font-size: 36rpx!important;
+}
+/* .i-btn-ghost  {
+  color: #309afc!important;
+} */

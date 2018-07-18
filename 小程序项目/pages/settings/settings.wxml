@@ -8,8 +8,8 @@
       <text class='telephone'>170****0000</text>
     </view>
   </view>
-  <view class='rest_password item'>
-    <navigator url='' hover-class='none'>
+  <view class='rest_password item' >
+    <navigator url='../modification/modification' hover-class='none'>
       <image src='../../images/password.png' class='password_img'></image>
       <text>修改密码</text>
     </navigator>

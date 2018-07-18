@@ -14,9 +14,9 @@ Page({
       tabActive: detail.key,
     })
     if(detail.key == "tab1"){
-      url: 'pages/waitTask/waitTask'
-    }else if(detail.key == "tab2") {
-      url: 'pages/alreadyTask/alreadyTask'
+      wx.reLaunch({
+        url: '../waitTask/waitTask'
+      })
     }
   },
   /**

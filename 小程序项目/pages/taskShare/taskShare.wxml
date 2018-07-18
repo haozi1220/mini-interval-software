@@ -1,0 +1,28 @@
+<!--pages/taskShare/taskShare.wxml-->
+<view class='container'>
+  <view class='one_t_s' wx:for="{{cartArr}}" wx:key="unique">
+    <view class='t_s_first'>
+      <checkbox-group bindchange="checkboxChange" >
+          <label class='elect_man'>
+              <checkbox value="{{index}}"></checkbox>
+              <view>{{item.value}}</view>
+              <!-- 其他布局代码 -->    
+          </label>   
+      </checkbox-group>
+      <text class='t_s_time'>2018.3.4 13:50</text>
+    </view>
+    <view class='t_s_sec'>
+      <image class='t_s_sec_icon' src='../../images/man_icon.png'></image>
+      <text>46000*********2013</text>
+    </view>
+    <view class='t_s_thir'>
+      <image class='t_s_thir_icon' src='../../images/clock_icon.png'></image>
+      <text class='t_s_thir_time'>2018.2.10-2018.3.4</text>
+    </view>
+    <view class='bor_bott'>显示具体内容</view>
+  </view>
+  <!-- 申请按钮 -->
+  <view class='return_btn'>
+    <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">申请</i-button>
+  </view>
+</view>

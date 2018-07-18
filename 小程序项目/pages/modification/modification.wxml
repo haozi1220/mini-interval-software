@@ -1,0 +1,17 @@
+<!--pages/modification/modification.wxml-->
+<view class='container'>
+  <view class="userID">
+    <image src="../../images/new_code_icon.png"></image>
+    <input class="userNumber" type="number" maxlength="11" placeholder="新密码" placeholder-style="color: #999; font-size: 22rpx;"></input>
+  </view>
+  <view class='userPassword'>
+    <image src='../../images/password_icon.png'></image>
+    <input class='pNum' type='text' placeholder='再次输入新密码' placeholder-style='color: #999; font-size: 22rpx;'></input>
+  </view>
+  <view class='loginBtn'>
+    <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">保存</i-button>
+  </view>
+  <view class='cancle'>
+    <i-button bind:click="handleClick" i-class='login' type="ghost" long="true" shape="circle">取消</i-button>
+  </view>
+</view>

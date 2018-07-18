@@ -7,10 +7,6 @@ Component({
             type: String,
             value: '',
         },
-        inline: {
-            type: Boolean,
-            value: false
-        },
         // default, large, small
         size: {
             type: String,
@@ -63,18 +59,6 @@ Component({
             if (this.data.disabled) return false;
 
             this.triggerEvent('click');
-        },
-        bindgetuserinfo({ detail = {} } = {}) {
-            this.triggerEvent('getuserinfo', detail);
-        },
-        bindcontact({ detail = {} } = {}) {
-            this.triggerEvent('contact', detail);
-        },
-        bindgetphonenumber({ detail = {} } = {}) {
-            this.triggerEvent('getphonenumber', detail);
-        },
-        binderror({ detail = {} } = {}) {
-            this.triggerEvent('error', detail);
         }
     }
 });

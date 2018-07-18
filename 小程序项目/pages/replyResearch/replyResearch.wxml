@@ -1,0 +1,55 @@
+<!--pages/replyResearch/replyResearch.wxml-->
+<view class='container'>
+  <view class='r_header'>
+    <!-- 住院信息' -->
+    <view class='i_hospital'>
+      <text>是否有住院信息</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}" wx:key="unique">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class='i_hospital'>
+      <text>是否有门诊信息</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}" wx:key="unique">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <!-- 补充说明 -->
+    <view class='s_state'>
+      <view class='s_state_title'>补充说明</view>
+      <textarea auto-focus="true" placeholder='病人因车祸在我院住院17天' style="width: 100%; height: 295rpx; background-color: #f6f6f6; border-radius: 8rpx; box-sizing: border-box; margin: 20rpx 0 25rpx; font-size: 24rpx; color: #666; padding: 24rpx 28rpx;" />
+    </view>
+    <!-- 上传图片 -->
+    <view class='upload_img'>
+      <view class='up_state'>
+        <image src='../../images/spot_icon.png' style='width: 10rpx; height: 10rpx;'></image>
+        <text>请简要录入其他就诊信息，并将该就诊信息一并拍照上传，谢谢</text>
+      </view>
+      <view class='up_img_contant'>
+        <text>影像件</text>
+        <view class='i_icon_l'>
+          <image style='width: 98rpx; height: 98rpx;' src='../../images/book_icon.png'></image>
+          <image class='del_icon' style='width: 30rpx; height: 30rpx;' src='../../images/del_icon.png'></image>
+        </view>
+        <view class='i_icon_r'>
+          <image style='width: 98rpx; height: 98rpx;' src='../../images/add_icon.png'></image>
+          <!-- <image class='del_icon' style='width: 30rpx; height: 30rpx;' src='../../images/del_icon.png'></image> -->
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- 底部按钮 -->
+  <view class='r_footer'>
+    <view class='cancle'>
+      <i-button bind:click="handleClick" i-class='login' type="ghost" long="true" shape="circle">取消</i-button>
+    </view>
+    <view class='loginBtn'>
+      <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">提交</i-button>
+    </view>
+  </view>
+</view>

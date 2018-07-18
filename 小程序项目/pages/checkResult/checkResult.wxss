@@ -1,0 +1,69 @@
+/* pages/checkResult/checkResult.wxss */
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #eee;
+  width: 100%;
+  min-height: 100vh;
+  padding: 31rpx 22rpx 0;
+}
+/*  */
+.c_r_state  {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding:35rpx 29rpx 0;
+  font-size: 28rpx;
+  color: #333;
+}
+.c_r_state_f , .c_r_state_t  {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 60rpx;
+}
+/* 补充说明 */
+
+.c_r_state_s  {
+
+}
+.state_contant  {
+  width: 100%;
+  height: 86rpx;
+  background-color: #f4faff;
+  border-radius: 8rpx;
+  color: #999;
+  box-sizing: border-box;
+  padding: 29rpx;
+  margin-top: 25rpx;
+  margin-bottom: 70rpx;
+}
+/* 影像件 */
+
+.img_detail  {
+  box-sizing: border-box;
+  padding-bottom: 50rpx;
+}
+.img_all_icon  {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 25rpx;
+}
+/* 返回按钮 */
+.return_btn  {
+  width: 442rpx;
+  box-sizing: border-box;
+  margin-top: 80rpx;
+}
+.login {
+  height: 86rpx!important;
+  line-height: 86rpx!important;
+  font-size: 36rpx!important;
+}

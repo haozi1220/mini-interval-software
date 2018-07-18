@@ -6,10 +6,6 @@ Component({
             type: String,
             value: ''
         },
-        custom: {
-            type: String,
-            value: ''
-        },
         size: {
             type: Number,
             value: 14

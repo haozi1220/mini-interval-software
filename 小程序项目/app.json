@@ -1,12 +1,18 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/login/login",
+    "pages/taskShare/taskShare",
+    "pages/checkResult/checkResult",
+    "pages/replyResearch/replyResearch",
+    "pages/modification/modification",
     "pages/waitTask/waitTask",
     "pages/alreadyTask/alreadyTask",
     "pages/myTask/myTask",
     "pages/settings/settings",
     "pages/authorMess/authorMess",
+    "pages/index/index",
     "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,13 +26,13 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/taskShare/taskShare",
         "text": "任务共享池",
         "iconPath": "images/share_gray.png",
         "selectedIconPath": "images/share_blue.png"
       },
       {
-        "pagePath": "pages/myTask/myTask",
+        "pagePath": "pages/waitTask/waitTask",
         "text": "我的任务",
         "iconPath": "images/mine_gray.png",
         "selectedIconPath": "images/mine_blue.png"

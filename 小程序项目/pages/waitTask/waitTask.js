@@ -12,6 +12,21 @@ Page({
     this.setData({
       tabActive: detail.key
     })
+    if (detail.key == "tab2"){
+      wx.reLaunch({
+        url: '../alreadyTask/alreadyTask',
+      })
+    }
+  },
+  handleClick() {
+    wx.navigateTo({
+      url: '../authorMess/authorMess',
+    })
+  },
+  handleText() {
+    wx.navigateTo({
+      url: '../replyResearch/replyResearch',
+    })
   },
   /**
    * 生命周期函数--监听页面加载
