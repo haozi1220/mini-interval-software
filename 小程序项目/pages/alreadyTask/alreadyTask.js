@@ -12,6 +12,11 @@ Page({
     this.setData({
       tabActive: detail.key
     })
+    if(detail.key == "tab1"){
+      wx.reLaunch({
+        url: '../waitTask/waitTask',
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

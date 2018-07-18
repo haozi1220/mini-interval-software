@@ -5,15 +5,15 @@
       <view class='empty_line'></view>
       <i-tab key="tab2" title="已排查" class="tab_item"></i-tab>
     </i-tabs>
-    <view class='picker_wrap'>
+     <!-- <view class='picker_wrap'>
       <picker mode="date" value="{{date}}"bindchange="bindDateChange" class="picker_item">
         <view class='picker'>{{date}}</view>
       </picker>
       <text>至</text>
       <picker mode="date" value="{{date}}"bindchange="bindDateChange" class="picker_item">
         <view class='picker'>{{date}}</view>
-      </picker>
-    </view>
+      </picker> 
+    </view> -->
   </view>
   
   <view class='scroll_wrap'>
