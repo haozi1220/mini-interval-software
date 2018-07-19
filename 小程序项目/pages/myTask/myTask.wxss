@@ -1,7 +1,14 @@
 /* pages/myTask/myTask.wxss */
 page {
-  height: 100%;
   background-color: #eee;
+}
+.top_wrap {
+  position: fixed;
+  top: 1rpx;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  z-index: 99;
 }
 /*头部标签页  */
 .tabBox {
@@ -29,11 +36,91 @@ page {
   border-bottom: 6rpx solid #309afc;
 }
 /*日期选择器  */
-.picker_wrap {
+/* .picker_wrap {
   display: flex;
-  margin-top: 35rpx;
+  
   justify-content: center;
+}  */
+/* .picker_wrap picker {
+  width: 133rpx;
+  height: 24rpx;
+  padding-bottom: 7rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #309afc;
+  border-bottom: 1px solid #309afc;
 }
+.picker_wrap .picker {
+  text-align: center;
+}
+.picker_wrap text {
+  padding: 0 20rpx 7rpx 20rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #999;
+}  */
+.empty_warn {
+  margin-top: 136rpx;
+}
+.empty_warn image {
+  display: block;
+  width: 322rpx;
+  height: 179rpx;
+  margin: 0 auto;
+}
+.empty_warn text {
+  display: block;
+  margin-top: 72rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #999;
+}
+
+
+/* pages/waitTask/waitTask.wxss */
+/* pages/alreadyTask/alreadyTask.wxss */
+/* page {
+  background-color: #eee;
+} */
+
+ /* 头部标签页  
+.tabBox {
+  height: 98rpx;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+.tabBox .tab_item {
+  width: 108rpx;
+  height: 98rpx;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 98rpx;
+  color: #999;
+}
+.tabBox .empty_line {
+  width: 1px;
+  height: 58rpx;
+  margin-top: 20rpx;
+  background-color: #eee;
+}
+.tabBox .tabActive {
+  color: #309afc;
+  border-bottom: 6rpx solid #309afc;
+}
+/*日期选择器  */
+  .picker_wrap {
+  position: fixed;
+  display: flex;
+  padding-top:35rpx;
+  margin-top: 70rpx;
+  padding-bottom: 10rpx;
+  width: 100%;
+  justify-content: center;
+  z-index: 99;
+  background-color: #eee;
+} 
 .picker_wrap picker {
   width: 133rpx;
   height: 24rpx;
@@ -52,7 +139,7 @@ page {
   line-height: 24rpx;
   color: #999;
 }
-.empty_warn {
+/*.empty_warn {
   margin-top: 136rpx;
 }
 .empty_warn image {
@@ -68,4 +155,206 @@ page {
   font-size: 24rpx;
   line-height: 24rpx;
   color: #999;
+} */
+/*列表块  */
+.scroll_wrap {
+  padding-top:90rpx;
+  width: 706rpx;
+  margin: 35rpx auto 0;
+}
+.already_item {
+  border-radius: 15rpx;
+  padding: 30rpx 20rpx 0 23rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+}
+.already_item:last-child {
+  margin-bottom: 0;
+}
+.item_top {
+  display: flex;
+  justify-content: space-between;
+}
+.item_top .name {
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: #333;
+}
+.item_top .date {
+  font-size: 22rpx;
+  line-height: 36rpx;
+  color: #999;
+}
+.id_time_wrap {
+  margin-top: 22rpx;
+}
+.id_time_wrap view {
+  height: 26rpx;
+  font-size: 22rpx;
+  line-height: 26rpx;
+  color: #999;
+}
+.id_time_wrap image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.id_time_wrap text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.id_time_wrap .id_card image {
+  width: 30rpx;
+  height: 22rpx;
+  margin-top: 2rpx;
+}
+.id_time_wrap .id_card text {
+  padding-left: 24rpx;
+}
+.id_time_wrap .time_date {
+  margin-top: 15rpx;
+  padding-bottom: 30rpx;
+}
+.id_time_wrap .time_date image {
+  width: 24rpx;
+  height: 25rpx;
+  margin-top: 2rpx;
+}
+.id_time_wrap .time_date text {
+  padding-left: 26rpx;
+}
+.constractor {
+  width: 610rpx;
+  margin-left: 54rpx;
+  padding:18rpx 33rpx 42rpx 0;
+  box-sizing: border-box;
+  border-top: 1rpx solid #ddd;
+}
+.constractor text {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #333;
+}
+/*按钮部分  */
+.btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20rpx;
+}
+.btn_wrap .btn_item {
+  width: 130rpx !important;
+  height: 46rpx !important;
+  font-size: 24rpx !important;
+  line-height: 46rpx !important;
+  color: #309afc !important;
+  text-align: center !important;
+  border:1rpx solid #309afc !important;
+  padding: 0 !important;
+  background-color: #fff !important ;
+  margin: 0 !important;
+  border-radius: 24rpx !important;
+}
+.btn_wrap .marg_left {
+  margin-left: 34rpx !important;
+}
+/*底部提示部分  */
+.bot_warn {
+  display: flex;
+  justify-content: space-between;
+  width: 346rpx;
+  height: 22rpx;
+  margin: 0 auto;
+  padding: 30rpx 0 25rpx;
+}
+.bot_warn .warn-text {
+  display: block;
+  width:188rpx;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  color: #bbb;
+  text-align: center;
+}
+.bot_warn .empty_line {
+  display: block;
+  width: 80rpx;
+  margin: 10rpx 0;
+  height: 2rpx;
+  background-color: #bbb;
+}
+/*加载更多  */
+.loading_wrap {
+  padding-bottom: 25rpx;
+}
+.loading_wrap .refresh_wrap{
+  display: flex;
+  width: 118rpx;
+  height: 20rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.loading_wrap .refresh_wrap image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18rpx;
+  height: 20rpx;
+}
+.loading_wrap .refresh_wrap text {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  color: #999;
+}
+/*正在加载  */
+.loading_wrap .loading {
+  display: flex;
+  justify-content: space-between;
+  width: 70rpx;
+  align-items: center;
+  margin: 0 auto;
+}
+.loading_wrap .loading .dated {
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+/*回退部分  */
+.check_back_wrap .empty_line {
+  width: 610rpx;
+  margin-left: 54rpx;
+  border-top: 1rpx solid #ddd;
+}
+.check_back_wrap .check_back_top {
+  display: flex;
+  justify-content: flex-start;
+  padding: 28rpx 0;
+}
+.check_back_wrap .check_back_top image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+}
+.check_back_wrap .check_back_top .check_text {
+  display: flex;
+  width: 610rpx;
+  height: 30rpx;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding-left: 22rpx;
+}
+.check_back_wrap .check_back_top .check_back {
+  font-size: 28rpx;
+  line-height: 30rpx;
+  color: #fc3030;
+}
+.check_back_wrap .check_back_top .gray_text {
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+.check_contr {
+  display: block;
+  padding: 0 0 54rpx 50rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #333;
 }

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/myTask/myTask",
     "pages/login/login",
     "pages/taskShare/taskShare",
     "pages/checkResult/checkResult",
@@ -7,7 +8,7 @@
     "pages/modification/modification",
     "pages/waitTask/waitTask",
     "pages/alreadyTask/alreadyTask",
-    "pages/myTask/myTask",
+    
     "pages/settings/settings",
     "pages/authorMess/authorMess",
     "pages/index/index",
@@ -32,7 +33,7 @@
         "selectedIconPath": "images/share_blue.png"
       },
       {
-        "pagePath": "pages/waitTask/waitTask",
+        "pagePath": "pages/myTask/myTask",
         "text": "我的任务",
         "iconPath": "images/mine_gray.png",
         "selectedIconPath": "images/mine_blue.png"
