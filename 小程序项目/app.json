@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/authorMess/authorMess",
     "pages/myTask/myTask",
     "pages/login/login",
     "pages/taskShare/taskShare",
@@ -10,7 +11,7 @@
     "pages/alreadyTask/alreadyTask",
     
     "pages/settings/settings",
-    "pages/authorMess/authorMess",
+    
     "pages/index/index",
     "pages/logs/logs"
     

@@ -1,20 +1,24 @@
 <view class='image_wrap'>
-  <view class='image_item'>
-    <view class='title'>
-      <text>身份证影像</text>
-    </view>
-    <view class='info_wrap idCard_wrap'>
-      <view class='img_wrap'>
-        <image src='../../images/idCardRev.png'></image>
-        <image src='../../images/idCardFace.png'></image>
+  <block wx:for="{{authorImage}}" wx:key="index">
+    <view class='image_item'>
+      <view class='title'>
+        <text>{{item.authorMold}}</text>
       </view>
-      <view class='bottom_text'>
-        <text class='gray_dated'></text>
-        <text class='gray_text'>点击可查看大图</text>
+      <view class='info_wrap idCard_wrap'>
+        <view class='img_wrap'>
+        <block wx:for="{{item.imageSrc}}" wx:key="unique">
+          <image wx:for-item="item" src='{{item}}' data-src='{{item}}' bindtap='previewImage'></image>
+          <!-- <image src='../../images/idCardFace.png'></image> -->
+        </block>
+        </view>
+        <view class='bottom_text'>
+          <text class='gray_dated'></text>
+          <text class='gray_text'>点击可查看大图</text>
+        </view>
       </view>
     </view>
-  </view>
-  <view class='image_item'>
+  </block>
+  <!-- <view class='image_item'>
     <view class='title'>
       <text>授权书证影像</text>
     </view>
@@ -28,7 +32,7 @@
         <text class='gray_text'>点击可查看大图</text>
       </view>
     </view>
-  </view>
+  </view> -->
   <view class='back_btn_wrap'>
     <i-button bind:click="handleClick" type="primary" shape="circle" i-class="backBtn">返回</i-button>
   </view>

@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    authorImage:[
+      {
+        authorMold: '身份证影像',
+        imageSrc:[
+          '../../images/idCardRev.png',
+          '../../images/idCardFace.png'
+        ]
+      },
+      {
+        authorMold: '授权书影像',
+        imageSrc:[
+          '../../images/auhorBook1.png',
+          '../../images/auhorBook2.png'
+        ]
+      }
+    ]
   },
   handleClick() {
     // wx.switchTab({
@@ -13,6 +28,14 @@ Page({
     // })
     wx.navigateBack({
       delta: 1
+    })
+  },
+  // 预览图片
+  previewImage(e){
+    var currentSrc = e.target.dataset.src;
+    wx.previewImage({
+      current: currentSrc,
+      urls: ['https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532614474&di=f71e0da39f399cde6b818af3ede43121&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0142135541fe180000019ae9b8cf86.jpg%401280w_1l_2o_100sh.png'],
     })
   },
   /**
