@@ -39,6 +39,11 @@ radio .wx-radio-input{
    width: 26rpx;
    height: 25rpx;
 }
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: #309afc;
+}
 radio .wx-radio-input.wx-radio-input-checked::before  {
   border-radius: 50%;/* 圆角 */
   width: 26rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
@@ -46,7 +51,8 @@ radio .wx-radio-input.wx-radio-input-checked::before  {
   line-height: 26rpx;
   text-align: center;
   font-size:19rpx; /* 对勾大小 30rpx */
-  color:#fff; /* 对勾颜色 白色 */   background: transparent;
+  color:#fff; /* 对勾颜色 白色 */   
+  background: #309afc;
   transform:translate(-50%, -50%) scale(1);
   -webkit-transform:translate(-50%, -50%) scale(1);
 }

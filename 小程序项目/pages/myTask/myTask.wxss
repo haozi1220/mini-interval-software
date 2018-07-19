@@ -4,31 +4,31 @@ page {
 }
 .top_wrap {
   position: fixed;
-  top: 1rpx;
+  top: 0;
   left: 0;
   right: 0;
+  border-top: 1px solid #eee;
   background-color: #eee;
   z-index: 99;
 }
 /*头部标签页  */
 .tabBox {
-  height: 98rpx;
-  border-top: 1px solid #eee;
+  /* height: 98rpx; */
   box-sizing: border-box;
 }
 .tabBox .tab_item {
   width: 108rpx;
-  height: 98rpx;
+  /* height: 98rpx; */
   margin: 0 auto;
   text-align: center;
   font-size: 32rpx;
-  line-height: 98rpx;
+  /* line-height: 98rpx; */
   color: #999;
 }
 .tabBox .empty_line {
   width: 1px;
   height: 58rpx;
-  margin-top: 20rpx;
+  /* margin-top: 20rpx; */
   background-color: #eee;
 }
 .tabBox .tabActive {
@@ -114,7 +114,6 @@ page {
   position: fixed;
   display: flex;
   padding-top:35rpx;
-  margin-top: 70rpx;
   padding-bottom: 10rpx;
   width: 100%;
   justify-content: center;

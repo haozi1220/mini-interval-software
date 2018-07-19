@@ -1,3 +1,5 @@
+const { $Toast } = require('../../dist/base/index');
+
 // pages/modification/modification.js
 Page({
 
@@ -5,9 +7,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    password: '',
+    new_password: '',
+    visible: false,
+    showCancel: false
   },
-
+  passwordInput: function(e) {
+    this.setData({
+      password: e.detail.value  
+    }); 
+  },
+  new_passwordInput: function (e) {
+    this.setData({
+      new_password: e.detail.value
+    });
+  },
+  handleOpen1: function() {
+    let password = this.data.password;
+    let new_password = this.data.new_password;
+    if (password == '') {
+      $Toast({
+        content: '请输入新密码!',
+        duration: 1
+      });
+      return false;
+    } else if (new_password == '') {
+      $Toast({
+        content: '请再次输入新密码!',
+        duration: 1
+      });
+      return false;
+    };
+    this.setData({
+      visible: true
+    });
+  },
+  // ‘确认’
+  handleClose1() {
+    this.setData({
+      visible: false
+    });
+    wx.switchTab({
+      url: '../settings/settings',
+    })
+  },
+  // ‘取消’
+  handleClick: function () {
+    wx.switchTab({
+      url: '../settings/settings',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

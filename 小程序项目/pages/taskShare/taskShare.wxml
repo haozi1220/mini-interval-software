@@ -1,10 +1,10 @@
 <!--pages/taskShare/taskShare.wxml-->
 <view class='container'>
-  <view class='one_t_s' wx:for="{{cartArr}}" wx:key="unique">
+  <view class='one_t_s b_s' wx:for="{{cartArr}}" wx:key="unique" data-index='{{index}}' bindtap="checkClick">
     <view class='t_s_first'>
       <checkbox-group bindchange="checkboxChange" >
-          <label class='elect_man'>
-              <checkbox value="{{index}}"></checkbox>
+          <label class='elect_man' >
+              <checkbox  value="{{index}}" checked='{{ item.checked }}' ></checkbox>
               <view>{{item.value}}</view>
               <!-- 其他布局代码 -->    
           </label>   
@@ -23,6 +23,12 @@
   </view>
   <!-- 申请按钮 -->
   <view class='return_btn'>
-    <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">申请</i-button>
+    <i-button bind:click="handleOpen3" i-class='login' type="primary" long="true" shape="circle">申请</i-button>
   </view>
+  <loading hidden="{{loadingHidden}}">
+        申请中...
+  </loading>
+  <i-modal title="申请成功!" visible="{{ visible3 }}" actions="{{ actions3 }}" bind:click="handleClick3">
+    <view>您可到我的任务中查看</view>
+  </i-modal>
 </view>

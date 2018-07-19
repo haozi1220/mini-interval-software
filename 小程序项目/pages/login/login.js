@@ -7,19 +7,65 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    mobile: '',
+    password: '',
+    loadingHidden: true
+  },
+  mobileInput: function(e) {
+    this.setData({
+      mobile: e.detail.value
+    });
+  },
+  passwordInput: function (e) {
+    this.setData({
+      password: e.detail.value
+    });
   },
   handleText: function () {
-    $Toast({
-      content: '您的信息输入有误!',
-      duration: 0
+    let mobile = this.data.mobile;
+    let password = this.data.password;
+    let myreg = /^[1][0-9]{10}$/;
+    if (mobile == '') {
+      $Toast({
+        content: '请输入手机号!',
+        duration: 1
+      });
+      return false;
+    } else if (!myreg.test(mobile)) {
+      $Toast({
+        content: '手机号有误!',
+        duration: 1
+      });
+      return false;
+    } else if (password == '') {
+      $Toast({
+        content: '请输入密码!',
+        duration: 1
+      });
+      return false;
+    }
+    this.setData({
+      loadingHidden: false
     });
-    setTimeout(() => {
-      $Toast.hide();
+    let that = this;
+    setTimeout(function () {
+      that.setData({
+        loadingHidden: true
+      });
       wx.switchTab({
         url: '../taskShare/taskShare',
-      })
-    },1000);
+      });
+    }, 2000);
+    // $Toast({
+    //   content: '您的信息输入有误!',
+    //   duration: 0
+    // });
+    // setTimeout(() => {
+    //   $Toast.hide();
+    //   wx.switchTab({
+    //     url: '../taskShare/taskShare',
+    //   })
+    // },1000);
   },
   /**
    * 生命周期函数--监听页面加载

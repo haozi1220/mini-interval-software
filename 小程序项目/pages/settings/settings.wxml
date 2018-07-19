@@ -8,16 +8,17 @@
       <text class='telephone'>170****0000</text>
     </view>
   </view>
-  <view class='rest_password item' >
-    <navigator url='../modification/modification' hover-class='none'>
+  
+  <navigator url='../modification/modification'>
+    <view class='rest_password item' >
       <image src='../../images/password.png' class='password_img'></image>
       <text>修改密码</text>
-    </navigator>
-  </view>
-  <view class='rest_password item' hover-class='none'>
-    <navigator url=''>
+    </view>
+  </navigator>
+  <navigator url=''>
+    <view class='rest_password item' hover-class='none'>
       <image src='../../images/exit_login.png' class='exit_img'></image>
       <text>退出登录</text>
-    </navigator>
-  </view>
+    </view>
+  </navigator>
 </view>

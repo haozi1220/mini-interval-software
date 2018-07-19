@@ -2,16 +2,18 @@
 <view class='container'>
   <view class="userID">
     <image src="../../images/new_code_icon.png"></image>
-    <input class="userNumber" type="number" maxlength="11" placeholder="新密码" placeholder-style="color: #999; font-size: 22rpx;"></input>
+    <input class="userNumber" type="password" maxlength="11" placeholder="新密码" placeholder-style="color: #999; font-size: 22rpx;" value='' bindinput='passwordInput'></input>
   </view>
   <view class='userPassword'>
     <image src='../../images/password_icon.png'></image>
-    <input class='pNum' type='text' placeholder='再次输入新密码' placeholder-style='color: #999; font-size: 22rpx;'></input>
+    <input class='pNum' type='password' placeholder='确认新密码' placeholder-style='color: #999; font-size: 22rpx;' value='' bindinput='new_passwordInput'></input>
   </view>
   <view class='loginBtn'>
-    <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">保存</i-button>
+    <i-button bind:click="handleOpen1" i-class='login' type="primary" long="true" shape="circle">保存</i-button>
   </view>
   <view class='cancle'>
     <i-button bind:click="handleClick" i-class='login' type="ghost" long="true" shape="circle">取消</i-button>
   </view>
+  <i-toast id="toast" />
+  <i-modal title="修改成功!" visible="{{ visible }}" bind:ok="handleClose1" show-cancel="{{ showCancel }}"></i-modal>
 </view>

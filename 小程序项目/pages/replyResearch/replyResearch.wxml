@@ -21,7 +21,7 @@
     <!-- 补充说明 -->
     <view class='s_state'>
       <view class='s_state_title'>补充说明</view>
-      <textarea auto-focus="true" placeholder='病人因车祸在我院住院17天' style="width: 100%; height: 295rpx; background-color: #f6f6f6; border-radius: 8rpx; box-sizing: border-box; margin: 20rpx 0 25rpx; font-size: 24rpx; color: #666; padding: 24rpx 28rpx;" />
+      <textarea auto-focus="true" placeholder='病人因车祸在我院住院17天' placeholder-style='font-size: 22rpx; color: #999;' style="width: 100%; height: 295rpx; background-color: #f6f6f6; border-radius: 8rpx; box-sizing: border-box; margin: 20rpx 0 25rpx; font-size: 24rpx; color: #666; padding: 24rpx 28rpx;" />
     </view>
     <!-- 上传图片 -->
     <view class='upload_img'>
@@ -49,7 +49,8 @@
       <i-button bind:click="handleClick" i-class='login' type="ghost" long="true" shape="circle">取消</i-button>
     </view>
     <view class='loginBtn'>
-      <i-button bind:click="handleClick" i-class='login' type="primary" long="true" shape="circle">提交</i-button>
+      <i-button bind:click="handleOpen1" i-class='login' type="primary" long="true" shape="circle">提交</i-button>
     </view>
   </view>
+  <i-modal title="提交成功!" visible="{{ visible1 }}" bind:ok="handleClose1" bind:cancel="handleClose1" show-cancel="{{ showCancel }}"></i-modal>
 </view>

@@ -8,6 +8,7 @@ Page({
     // 头部标签页
     tabActive: 'tab1',
     date: '2018-3-3',
+    windowHeight:'', //系统高度
 
 
     myTask:{
@@ -99,6 +100,13 @@ Page({
           idCard: '46000**********2013',
           dateRange: '2018.2.10-2018.3.4',
           taskQuestion: '这种病是否可以报销，有病历表，报销流程是什么',
+        },
+        {
+          personName: '李丽丽',
+          taskTime: '2018.3.4 13:50',
+          idCard: '46000**********2013',
+          dateRange: '2018.2.10-2018.3.4',
+          taskQuestion: '这种病是否可以报销，有病历表，报销流程是什么',
         }
       ]
     },
@@ -119,10 +127,74 @@ Page({
       })
     }
   },
+  // '回复调查'按钮
+  handleClick: function() {
+    wx.navigateTo({
+      url: '../replyResearch/replyResearch',
+    })
+  },
+  // '授权信息'按钮
+  handleText: function () {
+    wx.navigateTo({
+      url: '../authorMess/authorMess',
+    })
+  },
+  // '排查结果'
+  handleResult: function () {
+    wx.navigateTo({
+      url: '../checkResult/checkResult',
+    })
+  },
+  // 底部加载动画
+  loadingAnimate(){
+    // 执行循环前先清除定时器
+    clearInterval(timer1);
+    // 放大动画
+    let animation = wx.createAnimation({
+      timingFunction: 'ease'
+    });
+    this.animation = animation;
+    animation.scale(2, 2).step();
+    this.setData({
+      animationData: animation.export()
+    });
+    // 缩小动画
+    let animationNor = wx.createAnimation({
+      timingFunction: 'ease'
+    });
+    this.animation2 = animationNor;
+    animationNor.scale(1, 1).step();
+    this.setData({
+      animationDataNor: animationNor.export()
+    })
+    var num = 0;
+    let timer1 = setInterval(function () {
+      num++;
+      if (num > 3) {
+        num = 0;
+      }
+      this.setData({
+        _num: num
+      })
+    }.bind(this), 500);
+  },
+  // 上滑函数
+  pullUpLoad(){
+    this.loadingAnimate();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 获取系统信息
+    var that = this;
+    wx.getSystemInfo({
+      success: function(res) {
+        that.setData({
+          windowHeight:res.windowHeight
+        })
+      },
+    })
     var getWTlist = [];
     var getATlist = [];
 
@@ -146,7 +218,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-   
+    // this.loadingAnimate();
   },
 
   /**

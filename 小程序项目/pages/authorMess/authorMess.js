@@ -8,8 +8,11 @@ Page({
   
   },
   handleClick() {
-    wx.switchTab({
-      url: '../waitTask/waitTask',
+    // wx.switchTab({
+    //   url: '../waitTask/waitTask',
+    // })
+    wx.navigateBack({
+      delta: 1
     })
   },
   /**

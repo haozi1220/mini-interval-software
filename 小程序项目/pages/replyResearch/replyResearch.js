@@ -8,11 +8,26 @@ Page({
     items: [
       {name: 'yes', value: '有记录'},
       {name: 'no', value: '无记录'}
-    ]
+    ],
+    visible1: false,
+    showCancel: false
   },
-  handleClick() {
-    wx.navigateTo({
-      url: '../checkResult/checkResult',
+  handleOpen1: function() {
+    this.setData({
+      visible1: true
+    });
+  },
+  handleClose1() {
+    this.setData({
+      visible1: false
+    });
+    wx.switchTab({
+      url: '../myTask/myTask',
+    })
+  },
+  handleClick: function() {
+    wx.switchTab({
+      url: '../myTask/myTask',
     })
   },
   /**

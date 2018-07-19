@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "任务共享池",
   "usingComponents": {
-    "i-button": "../../dist/button/index"
+    "i-button": "../../dist/button/index",
+    "i-modal": "../../dist/modal/index"
   }
 }

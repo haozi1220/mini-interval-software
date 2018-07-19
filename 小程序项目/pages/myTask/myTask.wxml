@@ -5,9 +5,7 @@
       <view class='empty_line'></view>
       <i-tab key="tab2" title="已排查" class="tab_item"></i-tab>
     </i-tabs>
-  </view>
-  <!-- 查询条件 -->
-  <view hidden="{{myTask.pagetype != 2}}" class='picker_wrap'>
+    <view hidden="{{myTask.pagetype != 2}}" class='picker_wrap'>
     <picker mode="date" value="{{date}}"bindchange="bindDateChange" class="picker_item">
       <view class='picker'>{{date}}</view>
     </picker>
@@ -16,6 +14,9 @@
       <view class='picker'>{{date}}</view>
     </picker>
   </view>
+  </view>
+  <!-- 查询条件 -->
+  
   <!-- 待排查 -->
   <view  hidden="{{myTask.pagetype != 1}}" class='scroll_wrap'>
     <block wx:for="{{myTask.waitTasklist}}" wx:key = "index">
@@ -49,8 +50,8 @@
           <text class='check_contr'>{{item.backData.backReason}}</text>
         </view> 
         <view class='btn_wrap'>
-          <i-button type='default' i-class='btn_item'>授权信息</i-button>
-          <i-button type='default' i-class='btn_item marg_left'>回复调查</i-button>
+          <i-button type='default' i-class='btn_item' bind:click="handleText">授权信息</i-button>
+          <i-button type='default' i-class='btn_item marg_left' bind:click="handleClick">回复调查</i-button>
         </view>
       </view>
     </block>
@@ -72,7 +73,7 @@
     </view>
   </view>
   <!-- 已排查 -->
-  <view hidden="{{myTask.pagetype != 2}}" scroll-y style='padding-top:160rpx;' class='scroll_wrap'>
+  <scroll-view hidden="{{myTask.pagetype != 2}}" scroll-y style='padding-top:140rpx; height:{{windowHeight}}px' class='scroll_wrap' bindscrolltolower="pullUpLoad" bindscroll="scroll">
     <block wx:for="{{myTask.alreadyTasklist}}" wx:key = "index">
       <view class='already_item'>
         <view class='item_top'>
@@ -93,8 +94,8 @@
           <text>{{item.taskQuestion}}</text>
         </view> 
         <view class='btn_wrap'>
-          <i-button type='default' i-class='btn_item'>授权信息</i-button>
-          <i-button type='default' i-class='btn_item marg_left'>排查结果</i-button>   
+          <i-button type='default' i-class='btn_item' bind:click="handleText">授权信息</i-button>
+          <i-button type='default' i-class='btn_item marg_left' bind:click="handleResult">排查结果</i-button>   
         </view>
       </view>
     </block>
@@ -104,17 +105,17 @@
         <text class='empty_line'></text>
     </view>
     <view class='loading_wrap'>
-      <view class='refresh_wrap'>
+      <view class='refresh_wrap' style='display:none;'>
         <image src='../../images/loade_fresh.png'></image>
         <text>加载更多</text>
       </view>
-      <view class='loading'  style='display:none;'>
+      <view class='loading'>
         <view class='dated' animation="{{_num==1 ? animationData : animationDataNor}}"></view>
         <view class='dated' animation="{{_num==2 ? animationData : animationDataNor}}"></view>
         <view class='dated' animation="{{_num==3 ? animationData : animationDataNor}}"></view>
       </view>
     </view>
-  </view> 
+  </scroll-view> 
   <!-- 排查列表为空 -->
   <view hidden="{{myTask.pagetype != 0}}" class='empty_warn'>
     <image src='../../images/empty_img.png'></image>

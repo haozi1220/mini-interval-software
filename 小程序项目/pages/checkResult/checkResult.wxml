@@ -17,10 +17,10 @@
     <view class='img_detail'>
       <text>影像件</text>
       <view class='img_all_icon'>
-        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_04.png'></image>
-        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_01.png'></image>
-        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_02.png'></image>
-        <image style='width: 138rpx; height: 138rpx;' src='../../images/book_icon_03.png'></image>
+        <image style='width: 138rpx; height: 138rpx; box-sizing: border-box; border: 1rpx solid #309afc' src='../../images/book_icon_04.png'></image>
+        <image style='width: 138rpx; height: 138rpx; box-sizing: border-box; border: 1rpx solid #309afc' src='../../images/book_icon_01.png'></image>
+        <image style='width: 138rpx; height: 138rpx; box-sizing: border-box; border: 1rpx solid #309afc' src='../../images/book_icon_02.png'></image>
+        <image style='width: 138rpx; height: 138rpx; box-sizing: border-box; border: 1rpx solid #309afc' src='../../images/book_icon_03.png'></image>
       </view>
     </view>
   </view>

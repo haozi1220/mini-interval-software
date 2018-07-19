@@ -9,7 +9,7 @@ Page({
   },
   handleClick() {
     wx.switchTab({
-      url: '../waitTask/waitTask',
+      url: '../myTask/myTask',
     })
   },
   /**

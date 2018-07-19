@@ -16,7 +16,13 @@
   border-radius: 16rpx;
   box-sizing: border-box;
   margin-top: 30rpx;
-  padding: 34rpx 21rpx 34rpx 0;
+  padding: 30rpx 21rpx 34rpx 0;
+}
+/* 边框阴影 */
+.b_s  {
+  box-sizing: border-box;
+  border: 1px solid #fff5de;
+  box-shadow: 3px 0 21px rgba(76, 76, 76, .19);
 }
 .t_s_first  {
   display: flex;
@@ -37,7 +43,8 @@
   display: flex;
   flex-flow: row;
   box-sizing: border-box;
-  margin: 0 20rpx;
+  margin-left: 22rpx;
+  margin-right: 14rpx;
 }
 .t_s_time  {
   font-size: 22rpx;
@@ -88,6 +95,8 @@
   width: 442rpx;
   box-sizing: border-box;
   margin-top: 80rpx;
+  position: fixed;
+  bottom: 130rpx;
 }
 .login {
   height: 80rpx!important;
