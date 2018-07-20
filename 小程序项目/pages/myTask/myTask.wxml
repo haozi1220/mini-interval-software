@@ -18,7 +18,8 @@
   <!-- 查询条件 -->
   
   <!-- 待排查 -->
-  <view  hidden="{{myTask.pagetype != 1}}" class='scroll_wrap'>
+  <!-- hidden="{{myTask.pagetype != 1}}" -->
+  <view hidden="{{myTask.pagetype != 1}}"   class='scroll_wrap' animation="{{myTask.pagetype == 1? leftIn : leftOut}}">
     <block wx:for="{{myTask.waitTasklist}}" wx:key = "index">
       <view class='already_item'>
         <view class='item_top'>
@@ -73,7 +74,7 @@
     </view>
   </view>
   <!-- 已排查 -->
-  <scroll-view hidden="{{myTask.pagetype != 2}}" scroll-y style='padding-top:140rpx; height:{{windowHeight}}px' class='scroll_wrap' bindscrolltolower="pullUpLoad" bindscroll="scroll">
+  <!-- <scroll-view hidden="{{myTask.pagetype != 2}}" scroll-y style='padding-top:140rpx; height:{{windowHeight}}px' class='scroll_wrap' bindscrolltolower="pullUpLoad" bindscroll="scroll">
     <block wx:for="{{myTask.alreadyTasklist}}" wx:key = "index">
       <view class='already_item'>
         <view class='item_top'>
@@ -115,7 +116,7 @@
         <view class='dated' animation="{{_num==3 ? animationData : animationDataNor}}"></view>
       </view>
     </view>
-  </scroll-view> 
+  </scroll-view>  -->
   <!-- 排查列表为空 -->
   <view hidden="{{myTask.pagetype != 0}}" class='empty_warn'>
     <image src='../../images/empty_img.png'></image>

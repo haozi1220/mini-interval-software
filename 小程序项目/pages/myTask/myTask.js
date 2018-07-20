@@ -8,7 +8,10 @@ Page({
     // 头部标签页
     tabActive: 'tab1',
     date: '2018-3-3',
-    windowHeight:'', //系统高度
+    leftIn:{}, //待排查左入动画
+    leftOut:{}, //待排查左出动画
+    windowHeight:'', //可用视口高度
+    windowWidth:'', //可用视口宽度
 
 
     myTask:{
@@ -111,7 +114,31 @@ Page({
       ]
     },
   },
+  // 排查页面的动画
+  taskAnimate(){
+    var $Width = this.data.windowWidth;
+    let _this = this;
+    // 左入动画
+    var leftIn = wx.createAnimation({
+      duration: 1000,
+      timingFunction:'ease'
+    });
+    _this.leftIn = leftIn;
+    leftIn.translateX(0).step();
+    // 左出动画
+    var leftOut = wx.createAnimation({
+      duration: 1000,
+      timingFunction: 'ease'
+    })
+    _this.leftOut = leftOut;
+    leftOut.translateX(-$Width).step();
+    this.setData({
+      leftIn:leftIn.export(),
+      leftOut:leftOut.export()
+    })
+  },
   TabChange({detail}){
+    this.taskAnimate();
     this.setData({
       tabActive: detail.key,
     })
@@ -191,7 +218,8 @@ Page({
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
-          windowHeight:res.windowHeight
+          windowHeight:res.windowHeight,
+          windowWidth:res.windowWidth
         })
       },
     })
